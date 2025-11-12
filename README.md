@@ -1,7 +1,7 @@
 # Java Encapsulation Lab
 
 ## Table of Contents
-1. [Basic Data Hiding](#1-basic-data-hiding)
+1. [Data Hiding](#1-data-hiding)
 2. [Getters and Setters](#2-getters-and-setters)
 3. [Data Validation](#3-data-validation)
 4. [Constructors and Initialization](#4-constructors-and-initialization)
@@ -13,7 +13,7 @@
 3. Create a `main` method inside this Main class
 4. Place all the below classes from the DIY sections into this package. 
 
-## 1. Basic Data Hiding
+## 1. Data Hiding
 
 ### Learning Objective
 Learn how to hide data using private access modifiers and understand why it's important for building robust applications.
