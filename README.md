@@ -125,7 +125,8 @@ public class Student {
 public class Student {
     private int age;
 
-    // Constructor is a kind of setter too. It initially sets the value of object fields. It too can use the same validation as the setter method  
+    /* Constructor is a kind of setter too. It initially sets the value of object fields. It too
+       can use the same validation as the setter method */  
     public Student(int age) {
         this.age = validateAge(age);
     }
@@ -201,13 +202,13 @@ public class Grade {
 }
 ```
 
-## 4. Constructors and Initialization
+## 4. Constructors and Initialisation
 
 ### Learning Objective
 Learn how to properly initialize encapsulated objects using constructors.
 
 ### Explanation
-Constructors ensure that objects are created in a valid state by properly initializing all necessary fields. A well-designed constructor validates its parameters and establishes class invariants, preventing the creation of invalid objects. The constructor represents the first line of defense in maintaining encapsulation, as it controls how objects are created and initialized.
+Constructors ensure that objects are created in a valid state by properly initialising all necessary fields. A well-designed constructor validates its parameters and establishes class invariants, preventing the creation of invalid objects. The constructor represents the first line of defense in maintaining encapsulation, as it controls how objects are created and initialized.
 
 ### Example
 ```java
