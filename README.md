@@ -119,19 +119,16 @@ graph LR
 
 **Part 2: Fixing with Private Fields**
 1. Change all fields in the `Student` class to **private**
-2. Add getter methods for all fields
-3. Add a setter for `gpa` that validates the value is between 0.0 and 4.0
 
 4. In your `Main` class:
    - Type `student.` again and observe the autocomplete list
    - Notice the fields are now gone from the list!
    - Try to access `student.name` directly - you'll get a compilation error
-   - Use the getter method instead: `student.getName()`
 
 **Expected Observation:**
 When you type `student.` in VS Code:
 - **With public fields**: You see `name`, `studentId`, `gpa`, constructor, etc.
-- **With private fields**: You only see `getName()`, `getStudentId()`, `getGpa()`, `setGpa()`, etc.
+- **With private fields**:  `name`, `studentId` abd`gpa` will have dissapeared from the list and are inaccessible 
 
 The private fields have "disappeared" from outside access!
 
