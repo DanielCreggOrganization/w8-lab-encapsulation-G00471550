@@ -245,7 +245,7 @@ public class Student {
     public Student(int age) {
         if (age < 16 || age > 100) {
             System.out.println("Invalid age: must be between 16 and 100");
-            return;
+            return 0; // Must return valid int or 
         }
         this.age = age;
     }
@@ -254,7 +254,7 @@ public class Student {
     public void setAge(int age) {
         if (age < 16 || age > 100) {
             System.out.println("Invalid age: must be between 16 and 100");
-            return;
+            return 0;
         }
         this.age = age;
     }
@@ -288,8 +288,8 @@ public class Student {
     // Private internal validation method just usable in this class by the constructor and the setter  
     private int validateAge(int age) {
         if (age < 16 || age > 100) {
-            System.out.println("Invalid age: must be between 16 and 100");
-            return 0;
+            System.out.println("Invalid age input: must be between 16 and 100 inclusive. Age set to 16.");
+            return 16; // If invalid input is recieved we must return a valid age keep the object state valid.
         }
         return age;
     }
